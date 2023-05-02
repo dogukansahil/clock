@@ -1,4 +1,4 @@
-## Clock
+## Clock (Night time via browser)
 This is a simple web page that displays a digital clock. The clock shows the current time in hours and minutes, with the hours and minutes separated by a colon.
 You don't need to install anything to use this clock, simply open it in your browser. The clock has a black background and uses a dark gray color for the time display, which makes it suitable for night use. Just open it in a tab and sleep.
 
