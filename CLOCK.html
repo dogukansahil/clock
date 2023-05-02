@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Clock</title>
+    <style>
+      body {
+        background-color: black;
+        color: gray;
+        text-align: center;
+        font-size: 6em;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #saat {
+        margin: auto;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      function updateClock() {
+        let now = new Date();
+        let hours = now.getHours();
+        let minutes = now.getMinutes();
+        hours = hours < 10 ? "0" + hours : hours; 
+        minutes = minutes < 10 ? "0" + minutes : minutes; 
+        let clockText = `${hours}<span id="dot">:</span>${minutes}`;
+        $("#saat").html(clockText);
+        $("#dot").fadeOut(500).fadeIn(500);
+      }
+
+      setInterval(updateClock, 1000);
+      updateClock(); 
+    </script>
+  </head>
+  <body>
+    <div id="saat"></div>
+  </body>
+</html>
