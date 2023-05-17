@@ -18,3 +18,5 @@ You can customize the appearance of the clock by editing the CSS in the head sec
 37% HTML (17 lines out of 46)
 28% CSS (13 lines out of 46)
 35% JavaScript (16 lines out of 46).
+
+* Demo: https://dogukansahil.com.tr/clock/index.html
